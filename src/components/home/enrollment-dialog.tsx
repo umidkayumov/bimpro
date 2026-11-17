@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { formatPrice, telegramUrl, type Course } from "@/lib/content";
 import { Asset } from "../ui/asset";
 
@@ -47,6 +48,11 @@ export function EnrollmentDialog({ course, onClose }: { course: Course; onClose:
         </ul>
         <strong className="course-price">{formatPrice(course.price)}</strong>
         <p>Kursga yozilish va to‘lov shartlari haqida administrator bilan bog‘laning.</p>
+        {course.id === "MEP-OVIK-301" && (
+          <Link className="button button-primary" href="/checkout">
+            Buyurtma va maxsus taklifni ko‘rish
+          </Link>
+        )}
         <a
           className="button button-primary"
           href={telegramUrl}

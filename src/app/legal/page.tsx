@@ -35,6 +35,14 @@ export default function LegalPage() {
             <a href="tel:+998976651625">+998 97 665 16 25</a> raqamiga murojaat qiling.
           </p>
         </section>
+        <section id="refund">
+          <h2>Mablag‘ni qaytarish siyosati</h2>
+          <p>
+            To‘lovdan oldin qaytarish shartlari va muddatlarini tasdiqlash uchun{" "}
+            <a href="mailto:info@bimpro.uz">info@bimpro.uz</a> bilan bog‘laning. Rasmiy qaytarish
+            siyosati bu loyihaga hali taqdim etilmagan.
+          </p>
+        </section>
       </main>
       <Footer />
     </>
